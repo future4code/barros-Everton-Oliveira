@@ -133,9 +133,9 @@ string2 = prompt("Digite outra mensagem")
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
   // implemente sua lógica aqui
-  console.log(((((ano-nascimento) <= 20) && ((rg + 5) <= ano)) && ((rg + 5) >= ano)) || ((20 < (ano-nascimento) <= 50) && ((rg + 10) <= ano)) || ((ano-nascimento) > 50) && ((rg + 15) <= ano))
+  console.log(((((anoN-nascimento) <= 20) && ((rg + 5) <= anoN)) && ((rg + 5) >= anoN)) || ((20 < (anoN-nascimento) <= 50) && ((rg + 10) <= anoN)) || ((anoN-nascimento) > 50) && ((rg + 15) <= anoN))
 }
-let ano = Number(prompt("Qual o ano atual?")) 
+let anoN = Number(prompt("Qual o ano atual?")) 
 let nascimento = Number(prompt("Qual seu ano de nascimento?"))
 let rg = Number(prompt("Qual ano sua carteira de identidade foi emitida?"))
 
