@@ -28,8 +28,24 @@ function retornaNumerosPares(array) {
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
- 
+  /*
+  array = Number
+  function pares (array) {
+    if (array[""] % 2 === 0){
+      return Math.pow(array[""],2)
+  }
+}*/
+array = Number
+let pares = array.filter((i) => {
+  return i % 2 === 0
+})
+
+pares.map(number => (number * number))
+
+return pares
+
 }
+
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
