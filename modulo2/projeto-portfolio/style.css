@@ -41,6 +41,12 @@ h2 {
     text-transform: uppercase;
 }
 
+h3 {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
 
 
 
@@ -212,7 +218,7 @@ a:hover {
     display: flex;
     align-items: top;
     background-color: transparent;
-    justify-content: center;
+    justify-content: left;
     background-image: url('img/cartas.png');
     background-position: center;
     background-size: 80%;
@@ -229,16 +235,22 @@ a:hover {
     width: 300px;
     height: 300px;
     border-radius: 100%;
-    margin: 3rem 0 0 0;
+    margin: 4rem 0 0 0;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
-    background-image: url('img/cartas.png');
+    background-image: url('img/loja.jpg');
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     filter: grayscale(0.5);
     color: black;
     cursor: pointer;
     transition: 0.5s ease-in-out ;
 }
+
+.card-text {
+    width: 40%;
+    letter-spacing: 1px;
+}
+
