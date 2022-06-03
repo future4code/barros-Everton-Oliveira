@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: mediumvioletred;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    padding: 10px;
+    background-color: #f2d0e0;
+}
+
+.icone {
+    height: 25px;
+}
+
+.cards {
+    display: flex;
+
+    height: 350px;
+}
+
+ul {
+    background-color: #f2d0e0;
+}
+
+footer {
+    background-color: #f2d0e0;
+}
+
