@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
+
+
+* {
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial;
+    color: rgb(255, 255, 255);
+}
+
+.header-container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('img/backgroud-portfolio.jpg');
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    display: table-cell;
+    flex-direction: column;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+.social-media {
+    margin-top: 1rem;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: rgb(221, 211, 233);
+    padding: 1rem 4rem;
+    border: 1px solid rgb(221, 211, 233);
+    min-width: 4rem;
+    display: inline-block;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+a:hover {
+    color: rgb(119, 44, 189);
+    background-color: rgb(221, 211, 233)
+}
+
+
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 9999;
+    transition: 400ms ease-in-out 0s;
+}
+
+.checkbox .trace {
+    width: 60px;
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+}
+
+
+.checkbox .trace:nth-child(1) {
+    top: 26px;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(2) {
+    top: 46px;
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(3) {
+    top: 66px;
+    transform: rotate(0);
+}
+
+#toggle {
+    display: none;
+}
+
+
+
+
+.menu {
+    position: absolute;
+    top: 28px;
+    right: 30px;
+    background-color: transparent;
+    height: 4px;
+    width: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 0px rgb(0, 0, 0);
+    z-index: -1;
+    transition: 400ms ease-in-out 0s;
+}
+
+.menu-itens {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 400ms ease-in-out 0s;
+}
+
+.menu-itens ul {
+    list-style-type: none;
+}
+
+.menu-itens ul li a {
+    margin: 10px 0;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(1) {
+    transform: rotate(45deg);
+    top: 47px;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(2) {
+    transform: translate(-100px);
+    width: 30px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 48px;
+}
+
+#toggle:checked + .checkbox {
+    background-color: white;
+}
+
+#toggle:checked ~ .menu {
+    box-shadow: 0px 0px 0px 100vmax rgb(255, 255, 255);
+    z-index: 1;
+}
+
+#toggle:checked ~ .menu-itens {
+    visibility: visible;
+    opacity: 1;
+}
+
+.container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+
+.card1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 4rem 0 0 0;
+    display: flex;
+    align-items: top;
+    background-color: transparent;
+    justify-content: left;
+    background-image: url('img/cartas.png');
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease-in-out ;
+}
+
+
+
+.card2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    margin: 4rem 0 0 0;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    background-image: url('img/loja.jpg');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    filter: grayscale(0.5);
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease-in-out ;
+}
+
+.card-text {
+    width: 40%;
+    letter-spacing: 1px;
+}
+
