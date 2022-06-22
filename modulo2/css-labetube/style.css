@@ -1,0 +1,56 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 87% 10%;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(220, 144, 50);
+}
+
+#busca {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px;
+    margin-bottom: 350px;
+}
+
+section {
+    margin: 10px auto;
+    border: 2px solid rgb(31, 182, 63);
+    padding: 1px;
+    width: 96%;
+}
+img {
+    width: 100%;
+}
+
+p {
+    padding: 30px 30px 30px 0px;
+}
+
+
+.media {
+    display: grid;
+    grid-template-rows: 3% 97%;
+    padding: 1px;
+}
+
+
+footer{
+    background-color: #1a1b20;
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
