@@ -5,7 +5,7 @@ export const Formulario=styled.div`
     justify-content:center;
     align-items:center;
     font-size: 40px;
-    padding: 20px 50px`
+    padding: px 50px`
 
 
    
